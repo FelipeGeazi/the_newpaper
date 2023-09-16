@@ -1,4 +1,5 @@
-import "./App.css";
+
+import "./styles/index.scss";
 import { Template } from "./Components/Template";
 import { RouterMain } from "./routes/indes";
 

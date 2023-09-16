@@ -1,0 +1,22 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+
+  padding: 0 1.5rem;
+  height: 2.9rem;
+
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 700;
+
+  background-color: var(--color-blue);
+  color: var(--wcolor-white);
+
+  transition: 0.4s;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+}

@@ -49,7 +49,11 @@ export const ContactForm = () => {
         {...register("email")}
         error={errors.email}
       />
-      <Select {...register("departament")} error={errors.departament}>
+      <Select
+
+        {...register("departament")}
+        error={errors.departament}
+      >
         <option value="">Selecione uma área</option>
         <option value="redacao">Redação</option>
         <option value="administrativo">Administração</option>
@@ -59,7 +63,7 @@ export const ContactForm = () => {
         placeholder="Escreva a sua mensagem"
         error={errors.message}
       />
-      <button type="submit" disabled={loading}>
+      <button className="btn" type="submit" disabled={loading}>
         {loading ? "Enviando Mensagem" : "Enviar Mensagem"}
       </button>
     </form>

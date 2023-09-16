@@ -1,8 +1,9 @@
+import logo from "../../assets/LogoWhiter.png";
 export const Footer = () => {
   return (
     <>
       <footer>
-        <h3>The NewPaper</h3>
+        <img src={logo} alt="Logo" />
       </footer>
     </>
   );

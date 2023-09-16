@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
+import Logo from "../../assets/Logo.png";
 
 export const Header = () => {
   return (
     <>
       <header>
         <Link to="/">
-          <img src="" alt="Logo The NewPaper" />
+          <img src={Logo} alt="Logo The NewPaper" />
         </Link>
-        <Link to="contact">Fale Conosco</Link>
+        <Link className="btn" to="contact">
+          Fale Conosco
+        </Link>
       </header>
     </>
   );

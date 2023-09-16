@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { BannerSection } from "../../Components/sections/BannerSection";
 import { PostSections } from "../../Components/sections/PostSections";
 import { blogApi } from "../../services/api";
+import banner from "../../assets/banner.jpg";
 
 export const HomePage = () => {
   const [PostList, setPostList] = useState([]);
-  
+
   useEffect(() => {
     const getPosts = async () => {
       try {
@@ -23,7 +24,7 @@ export const HomePage = () => {
   return (
     <>
       <h1>Home Page</h1>
-      <BannerSection src="" alt="Banner de Home Page" />
+      <BannerSection img={banner} alt="Banner de Home Page" />
       <PostSections title="Últimas Noticias" postList={PostList} />
     </>
   );

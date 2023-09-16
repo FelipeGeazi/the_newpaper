@@ -4,12 +4,12 @@ import { PostCard } from "./PostCard";
 export const PostSections = ({ title, postList }) => {
   return (
     <section>
-      <h2>{title}</h2>
+      <h2 className="title one">{title}</h2>
 
       <ul>
-        {postList.map((post) => 
+        {postList.map((post) => (
           <PostCard key={post.id} post={post} />
-        )}
+        ))}
       </ul>
     </section>
   );

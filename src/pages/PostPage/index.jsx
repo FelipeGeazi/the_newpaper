@@ -3,6 +3,8 @@ import { ContentSection } from "../../Components/sections/ContentSection";
 import { PostSections } from "../../Components/sections/PostSections";
 import { useEffect, useState } from "react";
 import { blogApi } from "../../services/api";
+import { BannerSection } from "../../Components/sections/BannerSection";
+import Banner from "../../assets/banner.jpg";
 
 export const PostPage = () => {
   const navigate = useNavigate();
@@ -49,6 +51,7 @@ export const PostPage = () => {
         <h1>Carregando ... </h1>
       ) : (
         <>
+          <BannerSection img={Banner} alt="Banner de Noticias" />
           <ContentSection post={currentPost} />
           <PostSections title="Últimas Noticias" postList={PostList} />
         </>
